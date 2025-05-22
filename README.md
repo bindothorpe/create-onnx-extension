@@ -5,7 +5,7 @@
   
   **Create Chrome extensions powered by ONNX machine learning models**
   
-  [![npm version](https://badge.fury.io/js/create-onnx-extension.svg)](https://www.npmjs.com/package/create-onnx-extension)
+  [![npm version](https://badge.fury.io/js/create-onnx-extension.svg?cache=bust)](https://www.npmjs.com/package/create-onnx-extension)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 </div>
 
