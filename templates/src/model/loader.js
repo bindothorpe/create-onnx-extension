@@ -35,7 +35,7 @@ async function loadModel() {
         console.log('Loading ONNX model from:', MODEL_PATH);
 
         // Fetch the model file
-        const response = await fetch(chrome.runtime.getURL(MODEL_PATH));
+        const response = await fetch(MODEL_PATH);
         if (!response.ok) {
             throw new Error(`Failed to fetch model: ${response.status} ${response.statusText}`);
         }

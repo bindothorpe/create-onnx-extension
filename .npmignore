@@ -1,0 +1,4 @@
+test-extension*
+*.log
+node_modules
+.git
