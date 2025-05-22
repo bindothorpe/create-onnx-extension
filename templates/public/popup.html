@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{extensionName}}</title>
+    <style>
+        body {
+            width: 300px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        
+        h1 {
+            font-size: 18px;
+            margin-top: 0;
+            color: #333;
+            text-align: center;
+        }
+        
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        .status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            min-height: 20px;
+        }
+        
+        .status.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .status.loading {
+            background-color: #cce7ff;
+            color: #004085;
+            border: 1px solid #99d1ff;
+        }
+        
+        .info {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{extensionName}}</h1>
+    
+    <div class="button-container">
+        <button id="loadModelBtn">Load ONNX Model</button>
+    </div>
+    
+    <div id="status" class="status"></div>
+    
+    <div class="info">
+        <p>Place your ONNX model at:<br>
+        <code>assets/models/model.onnx</code></p>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
